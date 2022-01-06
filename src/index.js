@@ -1,9 +1,10 @@
 module.exports = function reverse (n) {
-    let result = "";
-    for (let i = 0; i < n.length; i++) {
-      result = n[i] + result;
-    }
-    return Number(result);
+  let number = String((Math.abs(n)));
+  let result = "";
+  for (let i = 0; i < number.length; i++) {
+    result = number[i] + result;
+  }
+  return Number(Math.abs(result));
 }
 
 
